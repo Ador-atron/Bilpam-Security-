@@ -1,0 +1,38 @@
+/* Bilpam global background + section panels (added by helper script) */
+/* Replace ../assets/images/bilpam-office.svg with a real bilpam-office.jpg/png as needed */
+body {
+  margin: 0;
+  font-family: 'Inter', Arial, sans-serif;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    url('../assets/images/Background Image.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #ffffff;
+}
+
+/* Section panel style */
+section {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 80px 8%;
+  margin: 60px auto;
+  max-width: 1300px;
+  border-radius: 12px;
+  backdrop-filter: blur(12px) brightness(1.1);
+  -webkit-backdrop-filter: blur(12px) brightness(1.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+/* Fade-in helper */
+.fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.9s ease, transform 0.9s ease;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

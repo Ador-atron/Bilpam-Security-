@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bilpam Shield — Security & Protection</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav style="padding: 20px 8%; background: rgba(0, 0, 0, 0.8); position: sticky; top: 0; z-index: 100;">
+    <div style="max-width: 1300px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;">
+      <h1 style="margin: 0; font-size: 24px; color: #c9a24a;">Bilpam Shield</h1>
+      <ul style="list-style: none; margin: 0; padding: 0; display: flex; gap: 30px;">
+        <li><a href="index.html" style="color: #ffffff; text-decoration: none;">Home</a></li>
+        <li><a href="about.html" style="color: #ffffff; text-decoration: none;">About</a></li>
+        <li><a href="services.html" style="color: #ffffff; text-decoration: none;">Services</a></li>
+        <li><a href="contact.html" style="color: #ffffff; text-decoration: none;">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section style="text-align: center; padding: 120px 8%; margin: 0;">
+    <h2 style="font-size: 48px; margin: 0 0 20px 0; color: #c9a24a;">Elite Security Solutions</h2>
+    <p style="font-size: 20px; margin: 0 0 30px 0; color: #e6eef3; opacity: 0.9;">Trusted protection for high-value assets and personnel</p>
+    <img src="assets/images/logo.jpg" alt="Logo" style="width: 100%; max-width: 400px; margin: 20px auto; border-radius: 8px;">
+    <img src="assets/images/personnel.jpg" alt="Personnel" style="width: 100%; max-width: 800px; margin: 40px 0; border-radius: 8px;">
+    <a href="contact.html" style="display: inline-block; background: #c9a24a; color: #0b1720; padding: 14px 32px; border-radius: 6px; text-decoration: none; font-weight: bold; margin-top: 20px;">Get Started</a>
+  </section>
+
+  <!-- Services Overview -->
+  <section>
+    <h2 style="font-size: 36px; margin-bottom: 40px; text-align: center;">Our Services</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px;">
+      <div style="background: rgba(0, 0, 0, 0.3); padding: 20px; border-radius: 8px;">
+        <img src="assets/images/personnel.jpg" alt="Personnel Protection" style="width: 100%; border-radius: 6px; margin-bottom: 15px;">
+        <h3 style="color: #c9a24a;">Personnel Protection</h3>
+        <p>Highly trained security personnel for executive and VIP protection.</p>
+      </div>
+      <div style="background: rgba(0, 0, 0, 0.3); padding: 20px; border-radius: 8px;">
+        <img src="assets/images/service-asset.svg" alt="Asset Security" style="width: 100%; border-radius: 6px; margin-bottom: 15px;">
+        <h3 style="color: #c9a24a;">Asset Security</h3>
+        <p>Comprehensive protection for valuable assets and facilities.</p>
+      </div>
+      <div style="background: rgba(0, 0, 0, 0.3); padding: 20px; border-radius: 8px;">
+        <img src="assets/images/service-threat.svg" alt="Threat Assessment" style="width: 100%; border-radius: 6px; margin-bottom: 15px;">
+        <h3 style="color: #c9a24a;">Threat Assessment</h3>
+        <p>Expert analysis and strategic planning for security needs.</p>
+      </div>
+    </div>
+    <div style="text-align: center; margin-top: 40px;">
+      <a href="services.html" style="display: inline-block; background: #c9a24a; color: #0b1720; padding: 12px 28px; border-radius: 6px; text-decoration: none; font-weight: bold;">View All Services</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer style="background: rgba(0, 0, 0, 0.9); padding: 40px 8%; text-align: center; color: #9ca3af; border-top: 1px solid #c9a24a;">
+    <p>&copy; 2025 Bilpam Shield. All rights reserved.</p>
+    <p style="font-size: 14px; margin-top: 10px;">Elite Security Solutions</p>
+  </footer>
+
+  <script>
+    // Fade-in animation on scroll
+    const observerOptions = { threshold: 0.1 };
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, observerOptions);
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

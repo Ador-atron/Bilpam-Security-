@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "note": "backend removed — package.json left minimal to avoid accidental installs"
+}
+{
+  "name": "bilpam-asset-tools",
+  "version": "1.0.0",
+  "description": "Image conversion utilities for Bilpam Shield site (SVG -> PNG/WebP)",
+  "scripts": {
+    "convert": "node tools/convert-svg.js"
+  },
+  "dependencies": {
+    "sharp": "^0.32.0"
+  }
+}
